@@ -17,7 +17,6 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -96,10 +95,16 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
-    // ==================== MOTOR DE SÍNTESE (SOLUÇÃO ESTÁVEL 2026) ====================
-    implementation("androidx.media:media:1.7.0")          // Motor oficial Android
+    // ==================== MOTOR DE SÍNTESE CORRIGIDO (2026) ====================
+    implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("androidx.media:media:1.7.0")
     implementation("androidx.media:media-session:1.7.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("org.joska.fluidsynth:fluidsynth-android:2.5.0")  // versão estável
 
     // ==================== DEMais dependências ====================
     implementation(libs.kotlinx.coroutines.android)
