@@ -69,7 +69,6 @@ android {
     }
 }
 
-// Configure the Secrets Gradle Plugin
 secrets {
     propertiesFileName = ".env"
     defaultPropertiesFileName = ".env.example"
@@ -80,7 +79,6 @@ googleServices {
     missingGoogleServicesStrategy = MissingGoogleServicesStrategy.WARN
 }
 
-// ==================== DEPENDÊNCIAS ====================
 dependencies {
     implementation(platform(libs.androidx.bom))
     implementation(platform(libs.compose.bom))
@@ -98,15 +96,12 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
-    // ==================== MOTOR DE SÍNTESE (FLUIDSYNTH) ====================
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1")
-    implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.media:media:1.7.0")
+    // ==================== MOTOR DE SÍNTESE (SOLUÇÃO ESTÁVEL 2026) ====================
+    implementation("androidx.media:media:1.7.0")          // Motor oficial Android
+    implementation("androidx.media:media-session:1.7.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
-    implementation("org.joska.fluidsynth:fluidsynth-android:2.5.0")
-    implementation("org.joska.fluidsynth:fluidsynth-ktx:2.5.0")
 
-    // ==================== DEMais dependências (Firebase etc.) ====================
+    // ==================== DEMais dependências ====================
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.logging.interceptor)
