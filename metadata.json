@@ -1,0 +1,6 @@
+{
+  "name": "Worship Pads",
+  "description": "App profissional de pads contínuos e sonoridades atmosféricas para louvor e adoração com síntese em tempo real, transposição maior/menor, arpejador, LFO e efeitos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
