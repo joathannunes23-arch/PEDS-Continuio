@@ -1,0 +1,34 @@
+{
+  "sounds": [
+    {
+      "id": "pad-luxo",
+      "name": "Pad Luxo",
+      "section": "pads",
+      "file": "pad_luxo.sf2",
+      "volume": 1.0,
+      "arpeggio": 2.0,
+      "lfoRate": 0.3,
+      "lfoDepth": 0.4
+    },
+    {
+      "id": "ambient-eter",
+      "name": "Ambient Éter",
+      "section": "ambient",
+      "file": "ambient_eter.sf2",
+      "volume": 0.85,
+      "arpeggio": 4.0,
+      "lfoRate": 0.1,
+      "lfoDepth": 0.2
+    },
+    {
+      "id": "string-coracao",
+      "name": "String Coração",
+      "section": "strings",
+      "file": "string_coracao.sf2",
+      "volume": 1.0,
+      "arpeggio": 3.0,
+      "lfoRate": 0.2,
+      "lfoDepth": 0.3
+    }
+  ]
+}
